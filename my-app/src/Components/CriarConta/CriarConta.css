@@ -1,0 +1,25 @@
+.registo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 25px;
+    text-align: center;
+    padding: 40px;
+}
+
+.registo-name {
+    margin-bottom: 20px;
+}
+
+.registo-texto {
+    font-size: 14px;
+}
+
+.link-login {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}

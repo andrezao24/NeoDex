@@ -1,0 +1,120 @@
+/* GERAL NAVABR CSS */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+    background: rgba(20, 20, 40, 0.6);
+    backdrop-filter: blur(12px);
+    width: 90%;
+    height: 4.8rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #898989;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.nav-item img {
+    width: auto;
+    max-height: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar .logo {
+    height: 2.6rem;
+}
+
+/* PÁGINA INICIAL */
+.nav-item.pagina-inicial.active img,
+.nav-item.pagina-inicial:hover img {
+    content: url('Assets/Navbar/pagina_inicial_hover.png');
+}
+
+.nav-item.pagina-inicial.active span,
+.nav-item.pagina-inicial:hover span {
+    background: linear-gradient(90deg,
+            #E976AE 13%,
+            #00ACDD 39%,
+            #00A561 66%,
+            #F5F009 88%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* POKEDEX */
+.nav-item.pokedex.active img,
+.nav-item.pokedex:hover img {
+    content: url('Assets/Navbar/pokedex_hover.png');
+}
+
+.nav-item.pokedex.active span,
+.nav-item.pokedex:hover span {
+    color: #E3350D;
+}
+
+/* EQUIPA */
+.nav-item.equipa.active img,
+.nav-item.equipa:hover img {
+    content: url('Assets/Navbar/equipa_hover.png');
+}
+
+.nav-item.equipa.active span,
+.nav-item.equipa:hover span {
+    color: #DE851F;
+}
+
+/* FAVORITOS */
+.nav-item.favoritos.active img,
+.nav-item.favoritos:hover img {
+    content: url('Assets/Navbar/favoritos_hover.png');
+}
+
+.nav-item.favoritos.active span,
+.nav-item.favoritos:hover span {
+    color: #AA771C;
+}
+
+/* GO */
+.nav-item.go.active img,
+.nav-item.go:hover img {
+    content: url('Assets/Navbar/go_hover.png');
+}
+
+.nav-item.go.active span,
+.nav-item.go:hover span {
+    color: #ED1C1E;
+}
+
+/* TCG */
+.nav-item.tcg.active img,
+.nav-item.tcg:hover img {
+    content: url('Assets/Navbar/tcg_hover.png');
+}
+
+.nav-item.tcg.active span,
+.nav-item.tcg:hover span {
+    color: #137AAD;
+}

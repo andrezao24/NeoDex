@@ -1,0 +1,381 @@
+.equipa-page {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 1100px;
+}
+
+.equipa-page h2 {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto 0.6rem;
+    text-align: left;
+    display: block;
+    color: white;
+    font-weight: 500;
+}
+
+.erro-msg {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+    width: 90%;
+}
+
+.equipa-header {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.equipa-footer-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 950px;
+    margin: 15px 0 0 0;
+}
+
+.equipa-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.1rem;
+}
+
+.slot {
+    width: 130px;
+    height: 170px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.slot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.slot img.sprite {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.slot p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 17.3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 14px;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.lista-pokemon-overlay {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-right: 13px;
+
+}
+
+.equipa-card-pokemon {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipa-card-pokemon:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.equipa-card-pokemon img.sprite {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 6px;
+}
+
+.equipa-card-pokemon p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.equipa-card-pokemon .equipa-tipos {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    gap: 2px;
+}
+
+.equipa-card-pokemon .equipa-tipo-icone {
+    width: 1rem;
+    height: 1rem;
+}
+
+.equipa-info {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 950px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.equipa-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 4px;
+}
+
+.equipa-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.equipa-info li {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 3px 8px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.equipa-info p {
+    margin-top: 0.5rem;
+}
+
+.equipa-guardada {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.equipa-guardada h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.equipa-guardada-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.equipa-guardada-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.slot-guardada img {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.5rem;
+}
+
+.btn-eliminar-equipa {
+    border: none;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: medium;
+    color: #818181;
+}
+
+.btn-eliminar-equipa:hover {
+    color: #474747;
+}
+
+.sem-equipas-msg {
+    text-align: left;
+    font-style: italic;
+    color: #999;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.details-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+}
+
+.details-section h2,
+.details-section h3 {
+    margin: 5px 0 5px;
+    color: #222;
+    text-align: left;
+}
+
+.details-section p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.details-section .sprite-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    cursor: pointer;
+}
+
+.details-section img.sprite {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+}
+
+.details-section .tipos {
+    position: absolute;
+    left: 13.5rem;
+    display: flex;
+    gap: 4px;
+}
+
+.details-section .tipos img.tipo-icone {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nome-e-botao {
+    display: flex;
+    gap: 50px;
+}
+
+.erro-mov {
+    display: flex;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.erro-moves {
+    color: #e74c3c;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.moves-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.moves-section h3 {
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.moves-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.move-item {
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.move-item:hover {
+    background-color: #dfe6e9;
+}
+
+.move-item.selected {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+}
+
+.moves-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}

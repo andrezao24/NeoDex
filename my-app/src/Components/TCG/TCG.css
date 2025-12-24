@@ -1,0 +1,120 @@
+.tcg-tracker {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem 1.25rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.tcg-pagination-controls.bottom {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.tcg-pagination-controls button {
+    padding: 6px 12px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.tcg-pagination-controls button:disabled {
+    background: #888;
+    cursor: default;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 35px;
+}
+
+.card-item {
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item img {
+    width: 100%;
+    display: block;
+}
+
+.card-meta {
+    margin-top: 8px;
+}
+
+.card-meta strong {
+    display: block;
+    font-size: 16px;
+}
+
+.meta-row {
+    font-size: 14px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.filtros-tcg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-bg {
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    z-index: 0;
+}
+
+.flag-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% /4);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.nome-e-estrela {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.nome-e-estrela .nome-carta {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+    color: white;
+}
+
+.favorito-carta {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

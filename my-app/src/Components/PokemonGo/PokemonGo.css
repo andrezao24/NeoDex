@@ -1,0 +1,79 @@
+.pokemon-go-container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.pokemon-go-info {
+    flex: 1;
+    max-width: 650px;
+}
+
+.pokemon-go-info h1 {
+    margin-bottom: 1rem;
+}
+
+.pokemon-go-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.pokemon-go-output {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    max-width: 470px;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.pokemon-go-output p {
+    margin: 0.5rem 0;
+}
+
+.pokemon-boost-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem 1.25rem;
+    color: #333;
+}
+
+.pokemon-boost-list h2 {
+    margin: 2rem 0 2rem 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.carousel-track {
+    display: flex;
+    overflow: hidden;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.flow {
+    display: flex;
+    justify-content: space-between; /* coloca os botões nas extremidades */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}

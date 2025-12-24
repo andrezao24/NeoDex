@@ -1,0 +1,19 @@
+.filtros select {
+    padding: 1rem 1rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.filtros select option{
+    color: #333;
+}
+
+.filtros select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.5);
+}

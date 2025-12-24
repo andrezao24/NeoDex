@@ -1,0 +1,297 @@
+.btn-simples-1 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #222;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn-simples-2 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #222;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-random {
+    position: relative;
+    left: 33.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #222;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-simples-1:hover:not(:disabled),
+.btn-simples-2:hover:not(:disabled),
+.btn-random:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-simples-1:disabled {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(51, 51, 51, 0.6);
+    border-color: rgba(0, 0, 0, 0.1);
+    cursor: default;
+    box-shadow: none;
+}
+
+.evolucoes .evolucao-btn {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 90%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.evolucoes .evolucao-btn:hover {
+    background-color: #333;
+}
+
+.evolucoes .evolucao-btn:disabled {
+    background-color: #8a8989;
+    cursor: default;
+}
+
+.btn-1 {
+    background-color: #E3350D;
+    padding: 0.9rem 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #ad280a;
+}
+
+.btn-2 {
+    background-color: #DE851F;
+    padding: 0.9rem 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #b16917;
+}
+
+.btn-3 {
+    background-color: #137AAD;
+    padding: 0.9rem 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-3:hover {
+    background-color: #10638d;
+}
+
+.btn-4 {
+    background-color: #ED1C1E;
+    padding: 0.9rem 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-4:hover {
+    background-color: #c0181a;
+}
+
+.limpar-filtros {
+    padding: 1rem 1rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.limpar-filtros {
+    color: #333;
+}
+
+.limpar-filtros:hover {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-in-button {
+    margin-left: auto;
+    padding: 0.9rem 4rem 0.9rem 4rem;
+    background-color: #3a7bbf;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-in-button:hover {
+    background-color: #1c4e80;
+}
+
+.log-out-button {
+    margin-left: auto;
+    padding: 0.9rem 3.7rem 0.9rem 3.7rem;
+    background-color: #c0392b;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.log-out-button:hover {
+    background-color: #a02a23;
+}
+
+.botao-submit {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-submit:hover {
+    background-color: #357ae8;
+}
+
+.google-login-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #DB4437;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.google-login-button:hover {
+    background-color: #c1351d;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2100;
+}
+
+.remove-slot-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: none;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slot:hover .remove-slot-btn {
+    display: block;
+}
+
+.add-pokemon-team,
+.remove-pokemon-team {
+    padding: 6px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.add-pokemon-team {
+    background-color: #27ae60;
+    color: white;
+}
+
+.add-pokemon-team:hover {
+    background-color: #219150;
+}
+
+.remove-pokemon-team {
+    background-color: #c0392b;
+    color: white;
+}
+
+.remove-pokemon-team:hover {
+    background-color: #a02a23;
+}
+
+.flag-btn {
+    flex: 1;
+    padding: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}

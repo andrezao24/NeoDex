@@ -1,0 +1,43 @@
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 25px;
+    text-align: center;
+    padding: 40px;
+}
+
+.login-name {
+    margin-bottom: 20px;
+}
+
+.erro {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.criar-conta-texto {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.link-registrar {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-registrar:hover {
+    text-decoration: underline;
+}
+
+.esquecer-senha {
+    color: yellow;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.esquecer-senha:hover {
+    text-decoration: underline;
+}

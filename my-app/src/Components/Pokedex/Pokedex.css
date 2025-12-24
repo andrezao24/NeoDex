@@ -1,0 +1,355 @@
+.pokedex-pag {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem 1.25rem;
+    color: #333;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 2.5rem 0 1.25rem 0;
+}
+
+.pokemon-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.pokemon-card {
+    border-radius: 0.7rem;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.favorito-estrela {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.tipos {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.2rem;
+}
+
+.tipo-icone {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.pokemon-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pokemon-detalhes {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: left;
+    color: #222;
+}
+
+.pokemon-detalhes h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.pokemon-detalhes p {
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
+}
+
+.botao-container,
+.flow-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.estatisticas,
+.evolucoes {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.estatisticas h3,
+.evolucoes h3,
+.tipos-lista h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #555;
+    font-weight: 500;
+    border-left: 4px solid #555;
+    padding-left: 0.5rem;
+}
+
+.estatisticas ul,
+.evolucoes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.estatisticas li {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.evolucoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.3rem;
+}
+
+.carregar-mensagem-card,
+.carregar-mensagem {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.carregar-mensagem-card {
+    color: #333;
+    padding: 1rem 2rem;
+}
+
+.carregar-mensagem {
+    color: #fff;
+}
+
+.sem-pokemon {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.paginas-texto {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+
+.detalhes-grid {
+    display: flex;
+    gap: 8.3rem;
+    align-items: flex-start;
+}
+
+.infos,
+.sprite-central,
+.evolucoes {
+    flex: 1;
+}
+
+.evolucoes {
+    text-align: left;
+}
+
+.tipos-lista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+}
+
+.tipo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.tipo-item img {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    margin: 0 0.3rem 0 0;
+}
+
+.sprite-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 10rem;
+
+}
+
+.main-sprite {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.fav {
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    margin: 2rem 0rem;
+}
+
+.logout {
+    text-align: center;
+}
+
+.nome-favorito-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infos img {
+    width: 2.5rem;
+    height: 3rem;
+    padding-bottom: 0.7rem;
+}
+
+.flow-container p {
+    font-size: medium;
+    color: #555;
+}
+
+.flow-container p:hover {
+    font-size: medium;
+    color: #555;
+    text-decoration: underline 1px solid;
+}
+
+.id {
+    font-weight: 500;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-cartas {
+    display: flex;
+    overflow: hidden;
+    gap: 16px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.carta-slide {
+    position: relative;
+    flex: 0 0 200px;
+    transition: transform 0.2s;
+}
+
+.carta-slide:hover {
+    transform: scale(1.05);
+}
+
+.carta-pokemon{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrossel-div {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #333;
+    padding-top: 1.3rem;
+}
+
+.carta-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.nome-da-carta{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.estrela-tcgslider {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.carta-id-tcgslider {
+    font-size: 12px !important;
+    color: #666;
+    margin-top: 10px !important;
+    text-align: center;
+}
+
+.slider-bg-details {
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    width: 500px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    z-index: 0;
+}
